@@ -12,11 +12,19 @@ window.addEventListener('mousenive', (e) => {
 
     objects.forEach(obj => {
         let strength;
-        if (obj.classList.contains('bat')) strength = 40;
-        else if (obj.classList.contains('wolf')) strength = 20;
+        if (obj.classList.contains('bat')) {
+            strength = 40;
 
-        const xMove = -xRatio * strength;
-        const yMove = -yRatio * strength;
-        obj.style.transform = `translate3d(${xMove}px, ${yMove}px, 0)`;
+            const xMove = -xRatio * strength;
+            const yMove = -yRatio * strength;
+            obj.style.transform = `translate3d(${xMove}px, ${yMove}px, 0)`;
+        }
+        else if (obj.classList.contains('wolf')) {
+            strength = 20;
+
+            const xMove = -xRatio * strength;
+            const yMove = -yRatio * strength;
+            obj.style.transform = `translate3d(${xMove}px, ${yMove}px, 0) scaleX(-1)`;
+        }
     });
 });
