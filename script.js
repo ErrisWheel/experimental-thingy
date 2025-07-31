@@ -3,7 +3,7 @@ console.log("You are now hacked. JK -E")
 const layer = document.querySelector('.parallax-layer');
 const objects = document.querySelectorAll('.parallax-object');
 
-window.addEventListener('mousenive', (e) => {
+window.addEventListener('mousemove', (e) => {
     const xRatio = (e.clientX / window.innerWidth) * 2 - 1;
     const yRatio = (e.clientY / window.innerHeight) * 2 - 1;
 
