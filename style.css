@@ -5,12 +5,22 @@ body, html {
 }
 
 .parallax-section {
-    background-image: url('assets/images/parallax-bg.jpg');
+    position: relative;
+    overflow: hidden;
     height: 100vh;
-    background-attachment: fixed;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0; left: 0;
+    width: 110%;
+    height: 110%;
+    background-image: url('assets/images/parallax-bg.jpg');
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    pointer-events: none;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
 }
 
 .content-section {
