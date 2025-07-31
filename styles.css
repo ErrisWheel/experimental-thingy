@@ -1,1 +1,18 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
+.parallax-section {
+    background-image: url('assets/images/parallax-bg.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-section {
+    background-color: #f8f9fa;
+}
