@@ -10,6 +10,25 @@ body, html {
     height: 100vh;
 }
 
+.parallax-object {
+    position: absolute;
+    will-change: transform ;
+    pointer-events: none;
+}
+
+.parallax-object.bat {
+    top: 10%;
+    left: 5%;
+    width: 150px;
+}
+
+.parallax-object.wolf {
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
+
 .parallax-layer {
     position: absolute;
     top: 0; left: 0;
