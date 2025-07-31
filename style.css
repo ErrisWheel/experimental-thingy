@@ -24,7 +24,7 @@ body, html {
 
 .parallax-object.wolf {
     top: 50%;
-    left: 75%;
+    left: 85%;
     transform: translate(-50%, -50%);
     width: 200px;
 }
