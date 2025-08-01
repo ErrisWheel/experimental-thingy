@@ -4,9 +4,244 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDK What to call it yet.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
+<header class="top-header">
+    <nav class="nav-center">
+        <div class="nav-item" data-target="profile-modal">Profile</div>
+        <div class="nav-item" data-target="schedule-modal">Schedule</div>
+    </nav>
+</header>
+
+<div id="profile-modal" class="modal">
+    <button class="modal-close">&times;</button>
+    <div class="modal-body">
+        <aside class="sidebar">
+            <img src="assets/images/profile-pic.jpg" alt="Photo" class="profile-pic">
+            <h2>Joshua Erris A. Del Rosario</h2>
+            <div class="contact">
+                <p>#131 Kasiyahan St., Holy Spirit, QC, 1127</p>
+                <p>0991 580 7183</p>
+                <p>errisdelrosario@gmail.com</p>
+            </div>
+
+            <div class="section-title">Skills</div>
+            <div class="skill">
+                <div class="skill-name">Hardware Troubleshooting</div>
+                <div class="progress-bar"><div class="progress-bar-inner" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Custom PC Building</div>
+                <div class="progress-bar"><div class="progress-bar-inner" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Web Development</div>
+                <div class="progress-bar"><div class="progress-bar-inner" style="width: 80%;"></div></div>
+            </div>
+
+            <div class="section-title">Languages & Dialect</div>
+            <div class="skill">
+                <div class="skill-name">English</div>
+                <div class="progress-bar"><div class="progress-bar-inner" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Tagalog</div>
+                <div class="progress-bar"><div class="progress-bar-inner" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Kapampangan</div>
+                <div class="progress-bar"><div class="progress-bar-inner" style="width: 50%;"></div></div>
+            </div>
+        </aside>
+
+        <main class="main">
+            <h1>Profile</h1>
+            <h2>Education</h2>
+            <ul>
+                <li>Studied Programming & Robotics, FEU-Diliman</li>
+                <li>Studied 3 semesters of BS Medical Laboratory Science, FEU-NRMF</li>
+                <li>Currently studying BSIT, TIP-QC</li>
+            </ul>
+            <h2>Interests</h2>
+            <ul>
+                <li>Gaming</li>
+                <li>Watching movies & TV shows</li>
+                <li>Building computers</li>
+            </ul>
+            <h2>Affiliations</h2>
+            <ul>
+                <li>Former member of the FEU-Diliman Programming and Robotics, where I gained experience working with basic robotics projects and programming challenges.</li>
+                <li>Participated in several collaborative class projects and group studies during my time in both FEU-NRMF and TIP-QC.</li>
+                <li>
+            </ul>
+            <h2>Personal Qualities</h2>
+            <ul>
+               <li>I enjoy figuring out how things work, which helps me troubleshoot issues efficiently and improve my skills.</li>
+               <li>People say I’m approachable and reliable, especially when it comes to tasks involving computers or tech advice.</li> 
+            </ul>
+        </main>
+    </div>
+</div>
+
+<!-- DI KO NASABA AHAHADHAHHDAS
+
+<div id="schedule-modal" class="modal">
+    <button class="modal-close">&times;</button>
+    <div class="modal-body">
+        <aside class="sidebar">
+            <h2>Schedule</h2>
+        </aside>
+
+        <main class="main">
+            <h1>Schedule</h1>
+            <div class="schedule-grid">
+                <div class="header" style="grid-column: 1 / 5;">1st Semester S.Y 2024-2025</div>
+
+                <div class="header">Day</div>
+                <div class="header">Start</div>
+                <div class="header">End</div>
+                <div class="header">Courses</div>
+
+                <div style="grid-row: span 3;">Monday</div>
+                <div>4:30 pm</div><div>5:30 pm</div>
+                <div class="course">General Education Elective 1 (IT31S6) – Q-9406-D</div>
+                <div>7:30 am</div><div>9:30 am</div>
+                <div class="course">Web Systems & Technologies (IT21S5) – Q-5215</div>
+                <div>9:30 am</div><div>11:30 am</div>
+                <div class="course">Computer Programming 2 (IT12S1) – Q-5307B</div>
+
+                <div style="grid-row: span 2;">Tuesday</div>
+                <div>4:30 pm</div><div>5:30 pm</div>
+                <div class="course">General Education Elective 1 (IT31S6) – Q-9408</div>
+                <div>7:30 am</div><div>10:30 am</div>
+                <div class="course">Web Systems & Technologies (IT21S5) – Q-5215</div>
+            
+                <div>Wednesday</div>
+                <div>11:30 am</div><div>1:30 pm</div>
+                <div class="course">PATHfit 4 (ME22S1) – PE CENTER 1.3</div>
+
+                <div style="grid-row: span 2;">Friday</div>
+                <div>4:30 pm</div><div>5:30 pm</div>
+                <div class="course">General Education Elective 1 (IT31S6) – Q-9408</div>
+                <div>7:30 am</div><div>10:30 am</div>
+                <div class="course">Computer Programming 2 (IT12S1) – Q-5216</div>
+            
+                <div style="grid-row: span 4;">Saturday</div>
+                <div>1:30 pm</div><div>3:30 pm</div>
+                <div class="course">Modern Biology (IT21S7) – Lecture Q-5312</div>
+                <div>3:30 pm</div><div>6:30 pm</div>
+                <div class="course">Modern Biology (IT21S7) – Lab Q-3110</div>
+                <div>7:30 am</div><div>10:30 am</div>
+                <div class="course">Applied Statistics (IT21S7) – Lab Q-5208</div>
+                <div>10:30 am</div><div>12:30 pm</div>
+                <div class="course">Applied Statistics (IT21S7) – Lecture Q-5416</div>
+            </div>
+        </main>
+    </div>
+</div>
+
+-->
+
+<div id="schedule-modal" class="modal">
+    <button class="modal-close">&times;</button>
+    <div class="modal-body">
+        <aside class="sidebar">
+            <h2>Schedule</h2>
+        </aside>
+
+        <main class="main">
+            <h1>Schedule</h1>
+            <table class="schedule-boxed">
+                <thead>
+                    <tr>
+                        <th colspan="4">1st Semester S.Y 2024-2025</th>
+                    </tr>
+                    <tr>
+                        <th>Day</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Courses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Monday</td>
+                        <td>4:30 pm</td>
+                        <td>5:30 pm</td>
+                        <td>General Education Elective 1 (IT31S6) – Q-9406-D</td>
+                    </tr>
+                    <tr>
+                        <td>7:30 am</td>
+                        <td>9:30 am</td>
+                        <td>Web Systems & Technologies (IT21S5) – Q-5215</td>
+                    </tr>
+                    <tr>
+                        <td>9:30 am</td>
+                        <td>11:30 am</td>
+                        <td>Computer Programming 2 (IT12S1) – Q-5307B</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">Tuesday</td>
+                        <td>4:30 pm</td>
+                        <td>5:30 pm</td>
+                        <td>General Education Elective 1 (IT31S6) – Q-9408</td>
+                    </tr>
+                    <tr>
+                        <td>7:30 am</td>
+                        <td>10:30 am</td>
+                        <td>Web Systems & Technologies (IT21S5) – Q-5215</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>11:30 am</td>
+                        <td>1:30 pm</td>
+                        <td>PATHfit 4 (ME22S1) – PE CENTER 1.3</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">Friday</td>
+                        <td>4:30 pm</td>
+                        <td>5:30 pm</td>
+                        <td>General Education Elective 1 (IT31S6) – Q-9408</td>
+                    </tr>
+                    <tr>
+                        <td>7:30 am</td>
+                        <td>10:30 am</td>
+                        <td>Computer Programming 2 (IT12S1) – Q-5216</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="4">Saturday</td>
+                        <td>1:30 pm</td>
+                        <td>3:30 pm</td>
+                        <td>Modern Biology (IT21S7) – Lecture Q-5312</td>
+                    </tr>
+                    <tr>
+                        <td>3:30 pm</td>
+                        <td>6:30 pm</td>
+                        <td>Modern Biology (IT21S7) – Lab Q-3110</td>
+                    </tr>
+                    <tr>
+                        <td>7:30 am</td>
+                        <td>10:30 am</td>
+                        <td>Applied Statistics (IT21S7) – Lab Q-5208</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 am</td>
+                        <td>12:30 pm</td>
+                        <td>Applied Statistics (IT21S7) – Lecture Q-5416</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</div>
+
 <body>
     <div class="parallax-section">
         <div class="parallax-layer"></div>
@@ -14,6 +249,11 @@
         <img src="assets/images/wolf.png" alt="Wolf" class="parallax-object wolf">
         
         <div class="fireflies">
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
             <div class="firefly"></div>
             <div class="firefly"></div>
             <div class="firefly"></div>
@@ -28,8 +268,8 @@
 
     <section class="content-section py-5">
         <div class="container">
-            <h2>About This Site</h2>
-            <p>This was made in a day. I started at 4:22 AM 08/01/2025.</p>
+            <h2>Sir, kung nagvavalo ka po, add moko HAHAHAHAHA</h2>
+            <p>This was made in a day. A lot of trial and errors. I started at 4:22 AM 08/01/2025. Osama Bon Jovi #99999</p>
         </div>
     </section>
 
