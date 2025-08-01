@@ -1,5 +1,6 @@
 console.log("You are now hacked. JK -E")
 
+// PARALLAX
 const layer = document.querySelector('.parallax-layer');
 const objects = document.querySelectorAll('.parallax-object');
 
@@ -34,3 +35,29 @@ function moveParallax(x, y) {
         obj.style.transform = `translate3d(${xMove}px, ${yMove}px, 0)${transformExtra}`;
     });
 }
+
+// MODALS
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.nav-item').forEach(item => {
+        const text = item.textContent.trim();
+        item.textContent = '';
+        text.split('').forEach(letter => {
+            const span = document.createElement('span');
+            span.textContent = letter;
+            item.append(span);
+        });
+    });
+
+    document.querySelectorAll('.nav-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const targetId = item.dataset.target;
+            document.getElementById(targetId).classList.add('modal-show');
+        });
+    });
+
+    document.querySelectorAll('.modal-close').forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.closest('.modal').classList.remove('modal-show');
+        });
+    });
+});
